@@ -36,6 +36,7 @@ shape = SubResource("RectangleShape2D_ma81w")
 texture = ExtResource("1_go3u1")
 hframes = 14
 vframes = 18
+frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
