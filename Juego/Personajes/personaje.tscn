@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://ssv3orj473sq"]
+
+[ext_resource type="Texture2D" uid="uid://cv3vo3glvwusj" path="res://Sprites/Sprites_sin_fondo/primerpersonaje.png" id="1_go3u1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ma81w"]
+size = Vector2(15, 23)
+
+[sub_resource type="Animation" id="Animation_mkhka"]
+resource_name = "caminando"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hjv7x"]
+_data = {
+"caminando": SubResource("Animation_mkhka")
+}
+
+[node name="Personaje" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, 5.5)
+shape = SubResource("RectangleShape2D_ma81w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_go3u1")
+hframes = 14
+vframes = 18
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hjv7x")
+}

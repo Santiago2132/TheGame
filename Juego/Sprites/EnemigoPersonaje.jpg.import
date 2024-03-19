@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/EnemigoPersonaje.jpg-93c70644c88607f21a288eec
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
