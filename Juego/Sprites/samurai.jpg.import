@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/samurai.jpg-442cc8f517394e8615f9f6fd8a881c6e.
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

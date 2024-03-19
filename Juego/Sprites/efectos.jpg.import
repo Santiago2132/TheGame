@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/efectos.jpg-5cac500857a7ff759363c8b825855fde.
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
